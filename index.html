@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Masters - TCG</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- Fuente tecnológica / anime -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado con el Logo -->
+    <header class="header">
+        <!-- Asumiendo que guardaste el logo también en la carpeta de imágenes -->
+        <img src="assets/images/logoletra.png" alt="Data Masters Logo" class="main-logo">
+    </header>
+
+    <main class="container">
+        
+        <!-- Sección de Videos -->
+        <section class="section-title">
+            <h2>Archivos de Video</h2>
+        </section>
+        
+        <section class="video-grid">
+            <!-- Video 1 -->
+            <div class="video-item">
+                <h3 class="video-title">Episodio I: Infraestrutura Arcana</h3>
+                <div class="video-container">
+                    <video controls width="1920" height="1080">
+                        <source src="assets/videos/datamasters.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-item">
+                <h3 class="video-title">Episodio II: Los Conjuros Persistentes del Tiempo</h3>
+                <div class="video-container">
+                    <video controls width="1920" height="1080">
+                        <source src="assets/videos/datamasters2.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Cartas -->
+        <section class="section-title">
+            <h2>Colección de Cartas</h2>
+        </section>
+
+        <!-- Contenedor vacío: Las cartas se inyectarán aquí vía JavaScript -->
+        <section class="cards-grid" id="cards-container">
+        </section>
+
+        <!-- Sección de Aviso Legal y Créditos -->
+        <section class="info-container">
+            <!-- Caja de Aviso Legal -->
+            <div class="info-box disclaimer">
+                <h3>Aviso Legal</h3>
+                <p><strong>Data Masters</strong> es un proyecto de parodia sin fines de lucro y de carácter netamente didáctico. Todos los diseños, conceptos y referencias inspirados en el juego de cartas coleccionables Yu-Gi-Oh! se utilizan bajo el principio de uso justo (Fair Use). No se busca infringir los derechos de autor de Konami Digital Entertainment ni de Kazuki Takahashi. El propósito de este sitio web es exclusivamente académico y demostrativo. Music: Passionate Duelist By Shinkichi Mitsumune</p>
+            </div>
+
+            <!-- Caja de Créditos de la Tarea -->
+            <div class="info-box credits">
+                <h3>Información Académica</h3>
+                <ul>
+                    <li><strong>Aprendiz:</strong> Jose Roberto Perez Cano</li>
+                    <li><strong>Institución:</strong> SENA (Servicio Nacional de Aprendizaje)</li>
+                    <li><strong>Programa de Formación:</strong> Tecnólogo en Implementación y Gestión de Bases de Datos</li>
+                    <li><strong>Evidencia:</strong> GA1-220501046-AA4-EV01. Plan de mejora de productos y procesos con la incorporación de TIC</li>
+                    <li><strong>Ubicación:</strong> Cali, Colombia</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Data Masters TCG. Forjando datos y conjuros.</p>
+    </footer>
+
+
+
+    <div id="card-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expanded-card">
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
